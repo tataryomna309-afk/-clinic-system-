@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Billing</title>
+  <link rel="stylesheet" href="yomna.js">
+  <link rel="stylesheet" href="فواتير.css">
+</head>
+<body>
+  <div class="form-box">
+    <h2>نموذج الفاتورة</h2>
+    <form>
+      <label>اسم المريض:</label>
+      <input type="text" placeholder="اكتب اسم المريض" required><label>رقم الفاتورة:</label>
+  <input type="text" placeholder="رقم الفاتورة" required>
+
+  <label>تاريخ الإصدار:</label>
+  <input type="date" required>
+
+  <label>الخدمات المقدمة:</label>
+  <textarea rows="3" placeholder="تفاصيل الخدمات أو العلاجات"></textarea>
+
+  <label>المبلغ الإجمالي:</label>
+  <input type="number" placeholder="بالدولار أو العملة المحلية" required>
+
+  <div class="buttons">
+    <button type="submit">حفظ الفاتورة</button>
+    <button type="button" onclick="history.back()">السابق</button>
+    <button type="button" onclick="window.location.href='yomna.html'">الرئيسية</button>
+  </div>
+</form>
+
+  </div>
+
+</body>
+</html>

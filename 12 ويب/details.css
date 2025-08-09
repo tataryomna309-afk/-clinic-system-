@@ -1,0 +1,65 @@
+  body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #f1f8e9, #e0f7fa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 25px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      padding: 35px 40px;
+      width: 400px;
+      animation: fadeZoom 0.8s ease-out;
+    }
+
+    h2 {
+      color: #00695c;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 1.6rem;
+    }   ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .btn {
+      margin-top: 25px;
+      display: block;
+      width: 100%;
+      background: linear-gradient(to left, #009688, #00796b);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to left, #00695c, #004d40);
+      transform: scale(1.03);
+    }
+   @keyframes fadeZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }

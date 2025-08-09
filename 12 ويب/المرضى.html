@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Patients</title> 
+<link rel="stylesheet" href="المرضى.css">
+<link rel="stylesheet" href="المرضى .js">
+</head>
+<body>
+<div class="form-box">
+    <h2> المرضى </h2>
+    <form>
+      <label>الاسم الكامل:</label>
+      <input type="text" placeholder="ادخل اسم المريض الكامل" required><label>العمر:</label>
+  <input type="number" placeholder="العمر" required>
+
+  <label>الجنس:</label>
+  <select required>
+    <option value="">اختر الجنس</option>
+    <option value="ذكر">ذكر</option>
+    <option value="أنثى">أنثى</option>
+  </select>
+
+  <label>رقم الهاتف:</label>
+  <input type="tel" placeholder="رقم الهاتف">
+
+  <label>العنوان:</label>
+  <textarea rows="2" placeholder="العنوان الكامل"></textarea> 
+
+  <div class="buttons">
+    <button type="submit">حفظ البيانات</button>
+    <button type="button" onclick="history.back()">السابق</button>
+    <button type="button" onclick="window.location.href='سجلات الطبية.html'">التالي</button>
+  </div>
+</form>
+
+
+  </div>
+</body>
+</html>
+

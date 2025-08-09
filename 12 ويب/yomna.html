@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحكم العيادة</title>
+    <link rel="stylesheet" href="yomna.css">
+    <link rel="stylesheet" href="ini.php">
+    <script src="yomna.js" defer></script>
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="nav-logo">⚕ CLINIC NAME</div>
+  <ul class="nav-links">
+    <li><a href="#appointments">المواعيد</a></li>
+    <li><a href="#patients">المرضى</a></li>
+    <li><a href="#records">السجلات</a></li>
+    <li><a href="#billing">الفواتير</a></li>
+    <li><a href="#Pharmacy">صيدلية</a></li>
+  </ul>
+  <div class="nav-icons">
+    <span>🔍</span>
+    <span>👤</span>
+  </div>
+</nav>
+
+<main class="main-grid">
+  <div class="card" id="appointments">
+    <a href="مواعيد.html" class="btn">المواعيد</a><br>
+    <img src="https://img.icons8.com/ios-filled/50/4a90e2/doctor-male.png" alt="Appointments">
+  </div>
+
+  <div class="card" id="patients">
+    <a href="المرضى.html" class="btn">بيانات المرضى</a><br>
+    <img src="https://img.icons8.com/ios-filled/50/4a90e2/clipboard.png" alt="Patients">
+  </div>
+
+  <div class="card" id="records">
+    <a href="سجلات الطبية.html" class="btn">السجلات الطبية</a><br>
+    <img src="https://img.icons8.com/ios-filled/50/4a90e2/medical-history.png" alt="Medical Records">
+  </div>
+
+  <div class="card" id="pharmacy">
+    <a href="صيدلية.html" class="btn">الصيدلية</a><br>
+    <img src="https://img.icons8.com/ios-filled/50/4a90e2/pill.png" alt="Pharmacy">
+  </div>
+
+  <div class="card" id="billing">
+    <a href="فواتير.html" class="btn">الفواتير</a><br>
+    <img src="https://img.icons8.com/ios-filled/50/4a90e2/bill.png" alt="Billing">
+  </div>
+
+  <div class="card" id="upcoming-appointment">
+    <h3>الموعد القادم</h3>
+    <p id="appointment-date">20 يوليو 2025 - الساعة 10 صباحاً</p>
+    <button class="btn" onclick="location.href='details.html'">عرض التفاصيل</button>
+
+  </div>
+</main>
+</body> 
+</html> 

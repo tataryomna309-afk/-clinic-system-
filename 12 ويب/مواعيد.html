@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointments</title>
+  <link rel="stylesheet" href="مواعيد.css">
+  <link rel="stylesheet" href="مواعبد.js">
+</head>
+<body>
+   <div class="form-box">
+    <h2>نموذج حجز موعد</h2>
+    <form>
+      <label>اسم المريض:</label>
+      <input type="text" placeholder="اكتب اسم المريض" required><label>تاريخ الموعد:</label>
+  <input type="date" required>
+
+  <label>الوقت:</label>
+  <input type="time" required>
+
+  <label>الطبيب:</label>
+  <input type="text" placeholder="اسم الطبيب" required>
+
+  <label>ملاحظات:</label>
+  <textarea rows="3" placeholder="أي ملاحظات إضافية"></textarea>
+
+  <div class="buttons">
+    <button type="submit">تأكيد الموعد</button>
+    <button type="button" onclick="history.back()">السابق</button>
+    <button type="button" onclick="window.location.href='المرضى.html'">التالي</button>
+  </div>
+</form>
+
+  </div>
+
+</body>
+</html>

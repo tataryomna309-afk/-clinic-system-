@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Medical Records</title>
+<link rel="stylesheet" href="سجلات .css">
+</head>
+<body>
+  <div class="form-box">
+    <h2>نموذج السجلات الطبية</h2>
+    <form>
+      <label>اسم المريض:</label>
+      <input type="text" placeholder="اسم المريض" required><label>رقم الملف الطبي:</label>
+  <input type="text" placeholder="رقم السجل الطبي">
+
+  <label>التاريخ الطبي:</label>
+  <textarea rows="3" placeholder="تفاصيل التاريخ الطبي"></textarea>
+
+  <label>الحساسية:</label>
+  <input type="text" placeholder="أنواع الحساسية إن وجدت">
+
+  <label>العلاج الحالي:</label>
+  <textarea rows="2" placeholder="تفاصيل العلاج الحالي"></textarea>
+
+  <div class="buttons">
+    <button type="submit">حفظ السجل</button>
+    <button type="button" onclick="history.back()">السابق</button>
+    <button type="button" onclick="window.location.href='صيدلية.html'">التالي</button>
+  </div>
+</form>
+
+  </div>
+
+</body>
+</html>

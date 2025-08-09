@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="details.css">
+        <link rel="stylesheet" href="details.js">
+     </head>
+     <body>
+        <div class="card">
+    <h2>تفاصيل الموعد</h2>
+    <ul>
+      <li><strong> التاريخ:</strong> 20 يوليو 2025</li>
+      <li><strong> الساعة:</strong> 10:00 صباحاً</li>
+      <li><strong> الطبيب:</strong> د. محمد عبد الله</li>
+      <li><strong> العيادة:</strong> عيادة طب الأسرة</li>
+      <li><strong> الملاحظات:</strong> مراجعة نتائج التحاليل الدورية</li>
+    </ul>
+    <button class="btn" onclick="location.href='yomna.html'">⬅ العودة</button>
+  </div>
+  <script>
+    const API_URL = 'http://localhost:3000/appointments';
+
+    async function addAppointment() {
+      const datetime = document.getElementById('datetime').value;
+      const doctor = document.getElementById('doctor').value;
+      const notes = document.getElementById('notes').value;
+
+      const res = await fetch(API_URL, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ datetime, doctor, notes })
+      });
+      if (res.ok) {
+        alert('تم حفظ الموعد');
+        loadAppointments();
+      } else {
+        alert('حدث خطأ');
+      }
+    }
+    async function loadAppointments() {
+      const res = await fetch(API_URL);
+      const data = await res.json();
+      const list = document.getElementById('appointments-list');
+      list.innerHTML = '';
+      data.forEach(app => {
+        const li = document.createElement('li');
+        list.appendChild(li);
+      });
+    }
+    loadAppointments();
+  </script>
+  </body>
+</html>
